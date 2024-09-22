@@ -1,12 +1,19 @@
-# INHERITANCE (PEWARISAN)
-# Apa itu inheritance ? 
+# Konsep Pemrograman Berorientasi Objek - Pertemuan Pertama
+
+## 🗂️ Table Of Contents
+- [INHERITANCE](https://github.com/adeliafhr/Tugas-Pertemuan-Pertama/blob/main/MakhlukHidup.java)
+- [EXTENDS](https://github.com/adeliafhr/Tugas-Pertemuan-Pertama/blob/main/Hewan.java)
+- [METODE SET](https://github.com/adeliafhr/Tugas-Pertemuan-Pertama/blob/main/Hewan.java)
+- [METODE GET](https://github.com/adeliafhr/Tugas-Pertemuan-Pertama/blob/main/Hewan.java)
+---
+
+## 🔗 Inheritance (Pewarisan)
 Inheritance (pewarisan) adalah konsep dalam pemrograman berorientasi objek (OOP) di mana sebuah kelas baru dapat mewarisi sifat-sifat dan perilaku dari kelas yang sudah ada. 
-Class yang akan diturunkan bisa disebut sebagai class induk (parent class), super class, atau base class. Sedangkan class yang menerima penurunan bisa disebut sebagai class anak (child class), sub class, derived class atau heir class.
+Class yang akan diturunkan bisa disebut sebagai class induk (parent class). Sedangkan class yang menerima penurunan bisa disebut sebagai class anak (child class).
 Inheritance memungkinkan kelas anak untuk mengakses dan menggunakan atribut serta metode dari kelas induk.
-# Extends
-Menggunakan kata kunci extends dalam definisi kelas menunjukkan bahwa kelas tersebut adalah turunan dari kelas lain. Kelas anak dapat mengakses metode dan atribut publik
-serta protected dari kelas induk. Untuk menurunkan sebuah class di bahasa pemrograman Java, tulis nama kelas anak, lalu perintah *extends* dan baru tulis nama kelas induk. 
-# Berikut contoh source code penggunaan inheritance dan extends
+### ➡️ Extends
+Menggunakan kata kunci extends dalam definisi kelas menunjukkan bahwa kelas tersebut adalah turunan dari kelas lain. Kelas anak dapat mengakses metode dan atribut dari kelas induk. Untuk menurunkan sebuah class di bahasa pemrograman Java, tulis nama kelas anak, lalu perintah *Extends* dan baru tulis nama kelas induk. 
+### 💻 Berikut contoh source code penggunaan inheritance dan extends
 <pre> 
   //ini adalah kelas induk
   public class MakhlukHidup {
@@ -30,15 +37,12 @@ Kelas ini memiliki satu metode, yaitu bernafas(), yang mencetak pesan "Saya bern
 - Hewan adalah kelas anak yang mewarisi sifat dari kelas MakhlukHidup. Dengan kata kunci extends, kelas Hewan dapat menggunakan metode yang ada di kelas MakhlukHidup, termasuk bernafas().
 Kelas hewan memiliki tiga atribut yaitu jumlahKaki, caraBergerak, makanan.
 - Aves adalah kelas anak yang mewarisi dari kelas Hewan. Ini berarti Aves juga mewarisi semua sifat dan metode dari MakhlukHidup. Aves memiliki dua atribut yaitu jumlahSayap dan bentukTubuh.
+---
+## ⚙️ Metode Setter dan Getter
+- Setter -> Metode yang digunakan untuk mengatur nilai dari atribut privat. Biasanya nama method ini dimulai dengan kata *set*
+- Getter -> Metode yang digunakan untuk mengambil nilai dari atribut privat. Biasanya nama method ini dimulai dengan kata *get*
 
-# Metode Setter dan Getter
-- Setter -> Metode yang digunakan untuk mengatur nilai dari atribut privat.
-- Getter -> Metode yang digunakan untuk mengambil nilai dari atribut privat.
-# Manfaat penggunaan setter dan getter
-1. Enkapsulasi: Menjaga atribut tetap privat dan hanya dapat diakses melalui metode yang ditentukan.
-2. Validasi: Memungkinkan untuk melakukan validasi pada nilai yang diatur melalui setter.
-3. Fleksibilitas: Memudahkan perubahan implementasi tanpa mempengaruhi kode yang menggunakan kelas tersebut.
-# Berikut contoh source code penggunan setter dan getter
+### 💻 Berikut contoh source code penggunan setter dan getter
 <pre>
   public class Hewan extends MakhlukHidup {
      private int JumlahKaki;
@@ -87,8 +91,8 @@ Metode getter untuk makanan digunakan untuk mengambil nilai dari atribut makanan
   System.out.println("Makanan burung dara "+ BurungDara.getMakanan());
 </pre>
 Di sini, kita membuat objek baru bernama BurungDara dari kelas Aves. Ini berarti BurungDara adalah burung yang memiliki semua sifat dari kelas Aves dan kelas induknya, yaitu Hewan.
-<br><br>
-Pada file github ini terjadinya pewarisan dari kelas induk yaitu kelas MakhlukHidup, lalu kelas induk menurunkan pada kelas Hewan dan Tumbuhan. Pada kelas Hewan juga memiliki
-turunan yaitu kelas Aves, Amfibi, Reptil, Pisces, Mamalia dan Kelas Tumbuhan memiliki turunan yaitu kelas Monokotil dan Dikotil. Oleh karena itu, semua kelas turunan akan mewarisi atribut 
-dari kelas induk / super class yaitu dari MakhlukHidup lalu ke kelas Hewan atau Tumbuhan. Namun, pada penjelasan kali ini hanya contoh source code dari kelas Aves yang merupakan turunan 
-dari kelas Hewan dan Hewan yang merupakan turunan dari kelas MakhlukHidup, tapi pada dasarnya semua kelas memiliki source code yang sama hanya saja beda atribut yang dimiliki oleh setiap kelas.
+
+---
+##  📝 Kesimpulan
+- Inheritance menjadikan kelas baru mewarisi sifat dari kelas induk melalui kata kunci *extends* 
+- Metode *set* dan *get* berguna untuk mengatur dan mengambil nilai atribut dan berfungsi untuk menjaga enkapsulasi data
