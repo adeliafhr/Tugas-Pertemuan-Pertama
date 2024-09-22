@@ -96,3 +96,6 @@ Di sini, kita membuat objek baru bernama BurungDara dari kelas Aves. Ini berarti
 ##  📝 Kesimpulan
 - Inheritance menjadikan kelas baru mewarisi sifat dari kelas induk melalui kata kunci *extends* 
 - Metode *set* dan *get* berguna untuk mengatur dan mengambil nilai atribut dan berfungsi untuk menjaga enkapsulasi data
+  
+---
+## 📖Semoga README ini membantu dalam memahami konsep Inheritance dengan Extends dan juga metode Set dan Get!💡
