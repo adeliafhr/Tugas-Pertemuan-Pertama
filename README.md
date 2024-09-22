@@ -1,5 +1,4 @@
-# Konsep Pemrograman Berorientasi Objek - Pertemuan Pertama
-
+# Inheritance dan Metode SET GET
 ## 🗂️ Table Of Contents
 - [INHERITANCE](https://github.com/adeliafhr/Tugas-Pertemuan-Pertama/blob/main/MakhlukHidup.java)
 - [EXTENDS](https://github.com/adeliafhr/Tugas-Pertemuan-Pertama/blob/main/Hewan.java)
